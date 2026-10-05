@@ -1,0 +1,6 @@
+{
+  "name": "EduHub - Next-Gen Education Platform",
+  "description": "Ta'limning yangi avlodi: o'quvchi, o'qituvchi va ta'lim boshqaruvini bitta xavfsiz va zamonaviy platformada birlashtiruvchi ta'lim tizimi.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
