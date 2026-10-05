@@ -242,6 +242,75 @@ export const LandingHero: React.FC<LandingHeroProps> = ({ onOpenAuth, onSelectTa
         </div>
       </section>
 
+      {/* Visual Feature Spotlights */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {/* Spotlight 1: Multilingual Learning */}
+          <div className="rounded-3xl overflow-hidden bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col justify-between">
+            <div className="relative aspect-[16/9] overflow-hidden bg-slate-900">
+              <img
+                src="/src/assets/images/eduhub_learning_languages_1791177980093.jpg"
+                alt="Multilingual Learning Suite"
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                referrerPolicy="no-referrer"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent flex items-end p-5">
+                <span className="text-xs font-bold text-teal-400 font-mono tracking-wider uppercase">
+                  CEFR A1–C2 · 6 Ta Jahon Tili
+                </span>
+              </div>
+            </div>
+            <div className="p-6 space-y-3">
+              <h3 className="text-xl font-bold font-display text-slate-900 dark:text-white">
+                Interaktiv Til O‘rganish Moduli
+              </h3>
+              <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                Ingliz, rus, o‘zbek, nemis, ispan va fransuz tillarida lug‘at, grammatika, o‘qish, tarjima va tinglab tushunish mashqlari. Har bir to‘g‘ri javob uchun avtomatik ballar taqdim etiladi.
+              </p>
+              <button
+                onClick={() => handleQuickPreview('STUDENT')}
+                className="pt-2 text-xs font-bold text-teal-600 dark:text-teal-400 hover:underline flex items-center gap-1"
+              >
+                <span>Mashqlarni ko‘rish</span>
+                <ArrowRight className="w-3.5 h-3.5" />
+              </button>
+            </div>
+          </div>
+
+          {/* Spotlight 2: Smart Analytics & Merit System */}
+          <div className="rounded-3xl overflow-hidden bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col justify-between">
+            <div className="relative aspect-[16/9] overflow-hidden bg-slate-900">
+              <img
+                src="/src/assets/images/eduhub_smart_analytics_1791177989325.jpg"
+                alt="Academic Analytics"
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                referrerPolicy="no-referrer"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent flex items-end p-5">
+                <span className="text-xs font-bold text-sky-400 font-mono tracking-wider uppercase">
+                  Jonli Reyting & Yutuqlar
+                </span>
+              </div>
+            </div>
+            <div className="p-6 space-y-3">
+              <h3 className="text-xl font-bold font-display text-slate-900 dark:text-white">
+                Akademik Tahlil & Davomat Nazorati
+              </h3>
+              <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                O‘quvchilar reytingi, kunlik faollik seriyasi (streak), uy vazifalari ijrosi va elektron davomat hisoboti. Ma'muriyat va o‘qituvchilar uchun to‘liq shaffof tahlil.
+              </p>
+              <button
+                onClick={() => handleQuickPreview('TEACHER')}
+                className="pt-2 text-xs font-bold text-sky-600 dark:text-sky-400 hover:underline flex items-center gap-1"
+              >
+                <span>O‘qituvchi tahlilini ko‘rish</span>
+                <ArrowRight className="w-3.5 h-3.5" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Security & Multi-Language Section */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="p-8 rounded-3xl bg-slate-900 text-white relative overflow-hidden border border-slate-800">
